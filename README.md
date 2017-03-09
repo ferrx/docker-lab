@@ -1,11 +1,21 @@
 # IOP Docker Lab
 Examples and Instructions for IOP Docker Lab
+![Docker](https://securityledger.com/wp-content/uploads/2015/05/docker-1024x347.png)
+
+## Docker Basics
+Docker provides virtualization technology that has fast start-up times and small resource footprint. Docker containers achieve this efficiency by sharing the host's kernel. This is contrary to a virtual machine which requires its own kernel. Eliminating the kernel and all of its necessary resources means that the virtualized operating system can be much smaller and processes required for kernel-level services do not need to be spun up.
 
 ![Docker](https://image.slidesharecdn.com/developerweek2015-docker-tutorial-150209173058-conversion-gate02/95/developerweek-2015-a-practical-introduction-to-docker-6-638.jpg?cb=1423503745)
 
-![Docker](https://i.stack.imgur.com/ydLN6.png)
+### Docker Images and Containers.
++ Docker Images are used to create Containers based on the specification within the image
++ Containers run your applications, act as your web server, your database server, etc
 
-![Docker](https://image.slidesharecdn.com/ansibledocker-141215141812-conversion-gate02/95/ansible-docker-4-638.jpg?cb=1418653970)
+### Dockerfile
+Images are built using a `Dockerfile` which is a plain text file that specifies to Docker what the image should consist of, such as:
++ The base operating system, i.e. `debian:jessie` or `microsoft\nanoserver`
++ Bootstrap commands executed when the container start up, such as installing an apache web server, installing php, enabling Windows features, and much more
++ Ports to be exposed, for example you might want port 80 exposed for any containers acting as a webserver
 
 ## Install Docker Toolbox for Windows
 Download and install [Docker Toolbox](https://github.com/docker/toolbox/releases/download/v1.12.5/DockerToolbox-1.12.5.exe). If there are any issues during installation, see [the installation guide](https://docs.docker.com/toolbox/toolbox_install_windows/#step-2-install-docker-toolbox).
