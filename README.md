@@ -17,6 +17,9 @@ Images are built using a `Dockerfile` which is a plain text file that specifies 
 + Bootstrap commands executed when the container start up, such as installing an apache web server, installing php, enabling Windows features, and much more
 + Ports to be exposed, for example you might want port 80 exposed for any containers acting as a webserver
 
+### Docker Hub
+[Docker Hub](https://hub.docker.com) is Docker's public ecosystem that acts as a repository for Docker Images. Here you can find images such as PHP, MySQL, IIS, ASP.Net, DotNetCore, and thousands more, for pulling down and using in your docker environment.
+
 ### Docker Compose
 Docker Compose is a tool that can be used to generate a full stack of containers using a single `docker-compose.yml` file that defines your stack. For example, you may have a Dockerfile for an Apache webserver and another Dockerfile for a PHP web application. You can use Docker Compose to create both containers at once, as well as tying together any dependencies and resources that each might need.
 
