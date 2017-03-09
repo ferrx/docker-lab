@@ -1,4 +1,4 @@
-# Install Gitlab using Docker
+# Install Gitlab Using Docker
 
 <p align="center"><img src="https://cdn.xebialabs.com/assets/files/plugins/gitlab.jpg" /></p>
 
