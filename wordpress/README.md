@@ -1,4 +1,4 @@
-### Install WordPress Using Docker
+# Install WordPress Using Docker
 
 <p align="center"><img src="https://s.w.org/about/images/logos/wordpress-logo-stacked-rgb.png" /></p>
 
@@ -8,6 +8,7 @@ For more information about this image, see [WordPress on Docker Hub](https://hub
 
 This installation will also use the MariaDB Docker Image. For more on its image, see [MariaDB on Docker Hub](https://hub.docker.com/_/mariadb/).
 
+### Use Docker Compose To Install WordPress
 Create a Docker Compose file called `docker-compose.yml` and add the following:
 ```
 version: '2'
