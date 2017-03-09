@@ -17,6 +17,9 @@ Images are built using a `Dockerfile` which is a plain text file that specifies 
 + Bootstrap commands executed when the container start up, such as installing an apache web server, installing php, enabling Windows features, and much more
 + Ports to be exposed, for example you might want port 80 exposed for any containers acting as a webserver
 
+### Docker Compose
+Docker Compose is a tool that can be used to generate a full stack of containers using a single `docker-compose.yml` file that defines your stack. For example, you may have a Dockerfile for an Apache webserver and another Dockerfile for a PHP web application. You can use Docker Compose to create both containers at once, as well as tying together any dependencies and resources that each might need.
+
 ## Install Docker Toolbox for Windows
 Download and install [Docker Toolbox](https://github.com/docker/toolbox/releases/download/v1.12.5/DockerToolbox-1.12.5.exe). If there are any issues during installation, see [the installation guide](https://docs.docker.com/toolbox/toolbox_install_windows/#step-2-install-docker-toolbox).
 
