@@ -37,4 +37,4 @@ Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to cr
 
 ### Interacting with Containers
 + To **execute a command on a running container** use `docker exec <container-name> <command>`
-+ To **enter a running a container with PowerShell** use `docker exec -it <container-name> powershell`
++ To **enter a running a container with bash** use `docker exec -it <container-name> bash`
