@@ -1,6 +1,6 @@
 # Install Gitlab using Docker
 
-![Gitlab](https://forum.gitlab.com/uploads/default/original/1X/277d9badcbd723e913b3a41e64e8d2f3d2c80598.png)
+![Gitlab](https://cdn.xebialabs.com/assets/files/plugins/gitlab.jpg)
 
 For more information about this image, see [Gitlab-ce on Dockerhub](https://hub.docker.com/r/gitlab/gitlab-ce/).
 
