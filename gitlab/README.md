@@ -2,6 +2,8 @@
 
 <p align="center"><img src="https://cdn.xebialabs.com/assets/files/plugins/gitlab.jpg" /></p>
 
+> GitLab is an online Git repository manager with a wiki, issue tracking, CI and CD. It is a great way to manage git repositories on a centralized server. GitLab gives you complete control over your repositories or projects and allows you to decide whether they are public or private for free
+
 For more information about this image, see [Gitlab-ce on Dockerhub](https://hub.docker.com/r/gitlab/gitlab-ce/).
 
 ```
