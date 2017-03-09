@@ -18,7 +18,7 @@ Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to cr
 + To get the IP for your docker-machine, use "docker-machine ip <name-of-VM>".
 
 ## Common Docker Commands
-### Images
+### Managing Images
 + To **get a list of images** use `docker images`
 + To **pull an image** from DockerHub use `docker pull <user-name>\<image-name>:<tag-name>`
 + To **build an image** use `docker build -t <image-name> .` within a directory with a Dockerfile
