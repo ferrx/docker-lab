@@ -5,7 +5,7 @@ Examples and Instructions for IOP Docker Lab
 ## Docker Basics
 Docker provides virtualization technology that has fast start-up times and small resource footprint. Docker containers achieve this efficiency by sharing the host's kernel. This is contrary to a virtual machine which requires its own kernel. Eliminating the kernel and all of its necessary resources means that the virtualized operating system can be much smaller and processes required for kernel-level services do not need to be spun up.
 
-<div style="text-align:center">![Docker](https://image.slidesharecdn.com/developerweek2015-docker-tutorial-150209173058-conversion-gate02/95/developerweek-2015-a-practical-introduction-to-docker-6-638.jpg?cb=1423503745)</div>
+<div style="text-align:center"><img src='https://image.slidesharecdn.com/developerweek2015-docker-tutorial-150209173058-conversion-gate02/95/developerweek-2015-a-practical-introduction-to-docker-6-638.jpg?cb=1423503745></div>
 
 ### Docker Images and Containers.
 + Docker Images are used to create Containers based on the specification within the image
