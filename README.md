@@ -24,6 +24,7 @@ Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to cr
 + To **build an image** use `docker build -t <image-name> .` within a directory with a Dockerfile
 + To **push an image** to DockerHub use `docker push <user-name>\<image-name>:<tag-name>`
 + To **remove an image** from your machine use `docker rmi <image-name>`
+
 ### Managing Containers
 + To **create a container** use `docker run --name <container-name> <image-name>`
 + To **view a list of running containers** use `docker ps`
@@ -33,6 +34,7 @@ Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to cr
 + To **remove a stopped container** use `docker rm <container-name>`
 + To **remove a running container** use `docker rm <container-name> -f`
 + To **remove all containers** use `powershell docker rm $(docker ps -a -q) -f`
+
 ### Interacting with Containers
 + To **execute a command on a running container** use `docker exec <container-name> <command>`
 + To **enter a running a container with PowerShell** use `docker exec -it <container-name> powershell`
