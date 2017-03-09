@@ -28,7 +28,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
-Within that directory, perform the following Docker Compose command:
+Navigate to that directory in your terminal and perform the following Docker Compose command:
 ```
 docker-compose up
 ```
