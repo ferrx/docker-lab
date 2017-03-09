@@ -34,3 +34,5 @@ docker-compose up
 ```
 
 Once installed, you can navigate to the site on port 8080. To get the IP for the site you can use `docker-machine ip <docker-machine-name>`.
+
+If the WordPress site is not coming up, check the status of your containers with `docker ps`. If the WordPress container is not running, start it with `docker start <container-name>`.
