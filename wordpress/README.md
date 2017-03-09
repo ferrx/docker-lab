@@ -5,6 +5,7 @@
 > WordPress is an online, open source website creation tool written in PHP. But in non-geek speak, it's probably the easiest and most powerful blogging and website content management system (or CMS) in existence today.
 
 For more information about this image, see [WordPress on Docker Hub](https://hub.docker.com/_/wordpress/).
+
 This installation will also use the MariaDB Docker Image. For more on its image, see [MariaDB on Docker Hub](https://hub.docker.com/_/mariadb/).
 
 Create a Docker Compose file called `docker-compose.yml` and add the following:
