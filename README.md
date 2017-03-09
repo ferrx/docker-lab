@@ -19,4 +19,15 @@ Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to cr
 
 ## Common Docker Commands
 + To get a list of images use `docker images`
-+ To download an image from DockerHub, use `docker pull <user-name>\<image-name>:<tag-name>` e.g. `docker pull gitlab\gitlab-ce:latest`
++ To download an image from DockerHub, use `docker pull <user-name>\<image-name>:<tag-name>`
++ To remove an image from your machine, use `docker rmi <image-name>`
++ To create a container use `docker run --name <container-name> <image-name>`
++ To view a list of running containers use `docker ps`
++ To view a list of running and stopped containers use `docker ps -a`
++ To stop a running container use `docker stop <container-name>`
++ To start a stopped container use `docker start <container-name>`
++ To remove a stopped container use `docker rm <container-name>`
++ To remove a running container use `docker rm <container-name> -f`
++ To remove all containers use `powershell docker rm $(docker ps -a -q) -f`
++ To execute a command on a running container use `docker exec <container-name> <command>`
++ To enter a running a container with PowerShell use `docker exec -it <container-name> powershell`
