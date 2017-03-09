@@ -34,7 +34,7 @@ To interact with a container using bash:
 docker run -it ubuntu bash
 ```
 
-To interact with a running container:
+To run a container in the background (detached) and execute commands on it:
 ```
 docker run -itd --name my-ubuntu ubuntu
 docker exec -it my-ubuntu bash
