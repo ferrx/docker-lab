@@ -13,7 +13,7 @@ Docker provides virtualization technology that has fast start-up times and small
 
 ### Dockerfile
 Images are built using a `Dockerfile` which is a plain text file that specifies to Docker what the image should consist of, such as:
-+ The base operating system, i.e. `debian:jessie` or `microsoft\nanoserver`
++ The base operating system, i.e. `debian:jessie` or `microsoft/nanoserver`
 + Bootstrap commands executed when the container start up, such as installing an apache web server, installing php, enabling Windows features, and much more
 + Files to copy into the image
 + Ports to be exposed, for example you might want port 80 exposed for any containers acting as a webserver
@@ -68,8 +68,8 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 ### Managing Images
 + To **get a list of images** use `docker images`
 + To **build an image** use `docker build -t <image-name> .` within a directory with a Dockerfile
-+ To **pull an image** from DockerHub use `docker pull <user-name>\<image-name>:<tag-name>`
-+ To **push an image** to DockerHub use `docker push <user-name>\<image-name>:<tag-name>`
++ To **pull an image** from DockerHub use `docker pull <user-name>/<image-name>:<tag-name>`
++ To **push an image** to DockerHub use `docker push <user-name>/<image-name>:<tag-name>`
 + To **remove an image** from your machine use `docker rmi <image-name>`
 
 ### Managing Containers
