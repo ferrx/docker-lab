@@ -15,13 +15,34 @@ Docker provides virtualization technology that has fast start-up times and small
 Images are built using a `Dockerfile` which is a plain text file that specifies to Docker what the image should consist of, such as:
 + The base operating system, i.e. `debian:jessie` or `microsoft\nanoserver`
 + Bootstrap commands executed when the container start up, such as installing an apache web server, installing php, enabling Windows features, and much more
++ Files to copy into the image
 + Ports to be exposed, for example you might want port 80 exposed for any containers acting as a webserver
 
-### Docker Hub
-[Docker Hub](https://hub.docker.com) is Docker's public ecosystem that acts as a repository for Docker Images. Here you can find images such as PHP, MySQL, IIS, ASP.Net, DotNetCore, and thousands more, for pulling down and using in your docker environment.
+Example Dockerfile (from [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/))
+```
+FROM microsoft/dotnet:1.0-runtime-deps
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install .NET Core
+ENV DOTNET_VERSION 1.0.4
+ENV DOTNET_DOWNLOAD_URL https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$DOTNET_VERSION/dotnet-debian-x64.$DOTNET_VERSION.tar.gz
+
+RUN curl -SL $DOTNET_DOWNLOAD_URL --output dotnet.tar.gz \
+    && mkdir -p /usr/share/dotnet \
+    && tar -zxf dotnet.tar.gz -C /usr/share/dotnet \
+    && rm dotnet.tar.gz \
+    && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
+```
 
 ### Docker Compose
 Docker Compose is a tool that can be used to generate a full stack of containers using a single `docker-compose.yml` file that defines your stack. For example, you may have a Dockerfile for an Apache webserver and another Dockerfile for a PHP web application. You can use Docker Compose to create both containers at once, as well as tying together any dependencies and resources that each might need.
+
+### Docker Hub
+[Docker Hub](https://hub.docker.com) is Docker's public ecosystem that acts as a repository for Docker Images. Here you can find images such as PHP, MySQL, IIS, ASP.Net, DotNetCore, and thousands more, for pulling down and using in your docker environment.
 
 ## Install Docker Toolbox for Windows
 Download and install [Docker Toolbox](https://github.com/docker/toolbox/releases/download/v1.12.5/DockerToolbox-1.12.5.exe). If there are any issues during installation, see [the installation guide](https://docs.docker.com/toolbox/toolbox_install_windows/#step-2-install-docker-toolbox).
@@ -46,8 +67,8 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 ## Common Docker Commands
 ### Managing Images
 + To **get a list of images** use `docker images`
-+ To **pull an image** from DockerHub use `docker pull <user-name>\<image-name>:<tag-name>`
 + To **build an image** use `docker build -t <image-name> .` within a directory with a Dockerfile
++ To **pull an image** from DockerHub use `docker pull <user-name>\<image-name>:<tag-name>`
 + To **push an image** to DockerHub use `docker push <user-name>\<image-name>:<tag-name>`
 + To **remove an image** from your machine use `docker rmi <image-name>`
 
