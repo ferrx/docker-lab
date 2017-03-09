@@ -74,7 +74,7 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 
 ### Managing Containers
 + To **create a container** use `docker run --name <container-name> <image-name>`
-+ To **create a container that will run in the background** use `docker run -d --name <container-name> <image-name>`
++ To **create a container that will run in the background** use `docker run -itd --name <container-name> <image-name>`
 + To **view a list of running containers** use `docker ps`
 + To **view a list of running and stopped containers** use `docker ps -a`
 + To **stop a running container** use `docker stop <container-name>`
