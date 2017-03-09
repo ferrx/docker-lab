@@ -19,8 +19,10 @@ Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to cr
 
 ## Common Docker Commands
 + To **get a list of images** use `docker images`
-+ To **download an image** from DockerHub, use `docker pull <user-name>\<image-name>:<tag-name>`
-+ To **remove an image** from your machine, use `docker rmi <image-name>`
++ To **pull an image** from DockerHub use `docker pull <user-name>\<image-name>:<tag-name>`
++ To **build an image** use `docker build -t <image-name> .` within a directory with a Dockerfile
++ To **push an image** to DockerHub use `docker push <user-name>\<image-name>:<tag-name>`
++ To **remove an image** from your machine use `docker rmi <image-name>`
 + To **create a container** use `docker run --name <container-name> <image-name>`
 + To **view a list of running containers** use `docker ps`
 + To **view a list of running and stopped containers** use `docker ps -a`
