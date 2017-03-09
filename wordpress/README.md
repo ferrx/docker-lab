@@ -30,7 +30,7 @@ services:
 
 Navigate to that directory in your terminal and perform the following Docker Compose command:
 ```
-docker-compose up
+docker-compose up -d
 ```
 
 Once installed, you can navigate to the site on port 8080. To get the IP for the site you can use `docker-machine ip <docker-machine-name>`.
