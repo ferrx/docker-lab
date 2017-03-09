@@ -1,4 +1,4 @@
-# docker-lab
+# IOP Docker Lab
 Examples and Instructions for IOP Docker Lab
 
 ## Install Docker Toolbox for Windows
