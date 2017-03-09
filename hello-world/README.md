@@ -31,5 +31,11 @@ docker rmi hello-world
 
 To interact with a container using bash:
 ```
-docker exec -it ubuntu bash
+docker run -it ubuntu bash
+```
+
+To interact with a running container:
+```
+docker run -itd --name my-ubuntu ubuntu
+docker exec -it my-ubuntu bash
 ```
