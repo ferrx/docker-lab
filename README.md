@@ -16,3 +16,7 @@ Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to cr
 + Once your environment is setup, you can access docker commands such as "docker images", "docker ps" etc.
 
 + To get the IP for your docker-machine, use "docker-machine ip <name-of-VM>".
+
+## Common Docker Commands
++ To get a list of images use `docker images`
++ To download an image from DockerHub, use `docker pull <user-name>\<image-name>:<tag-name>` e.g. `docker pull gitlab\gitlab-ce:latest`
