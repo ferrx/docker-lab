@@ -13,7 +13,7 @@ Docker provides virtualization technology that has fast start-up times and small
 
 ### Dockerfile
 Images are built using a `Dockerfile` which is a plain text file that specifies to Docker what the image should consist of, such as:
-+ The base operating system, i.e. `debian:jessie` or `microsoft/nanoserver`
++ The base image, i.e. `debian:jessie`, `microsoft/nanoserver` or another Docker image (think of it as a chain of inheritance)
 + Bootstrap commands executed when the container start up, such as installing an apache web server, installing php, enabling Windows features, and much more
 + Files to copy into the image
 + Ports to be exposed, for example you might want port 80 exposed for any containers acting as a webserver
