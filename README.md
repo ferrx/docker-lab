@@ -74,14 +74,17 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 
 ### Managing Containers
 + To **create a container** use `docker run --name <container-name> <image-name>`
-+ To **create a container that will run in the background** use `docker run -itd --name <container-name> <image-name>`
++ To **create a container that will run in the background** use `docker run -d <image-name>`
++ To **create a container that maps a host:guest port** use `docker run -p <host-port>:<guest-port> <image-name>`
 + To **view a list of running containers** use `docker ps`
 + To **view a list of running and stopped containers** use `docker ps -a`
 + To **stop a running container** use `docker stop <container-name>`
 + To **start a stopped container** use `docker start <container-name>`
 + To **remove a stopped container** use `docker rm <container-name>`
 + To **remove a running container** use `docker rm <container-name> -f`
++ To **remove all stopped containers** use `powershell docker rm $(docker ps -af status=exited -q)`
 + To **remove all containers** use `powershell docker rm $(docker ps -a -q) -f`
++ To **view container properties** use `docker inspect <container-name>`
 
 ### Interacting with Containers
 + To **execute a command on a running container** use `docker exec <container-name> <command>`
