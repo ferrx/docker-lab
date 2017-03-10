@@ -3,7 +3,7 @@ Examples and Instructions for IOP Docker Lab
 ![Docker](https://securityledger.com/wp-content/uploads/2015/05/docker-1024x347.png)
 
 ## Docker Basics
-Docker provides virtualization technology that has fast start-up times and small resource footprint. Docker containers achieve this efficiency by sharing the host's kernel. This is contrary to a virtual machine which requires its own kernel. Eliminating the kernel and all of its necessary resources means that the virtualized operating system can be much smaller and processes required for kernel-level services do not need to be spun up.
+Docker provides virtualization technology that has fast start-up times and small resource footprint. Docker containers achieve this efficiency by sharing the host's kernel. This is contrary to a virtual machine which requires its own kernel. Eliminating the kernel and all of its necessary resources means that the virtualized operating system can be much smaller and processes required for kernel-level services do not need to be spun up. The modular nature of Docker containers allows applications to easily be moved around without worrying about it working in any given environment.
 
 <p align="center"><img src="https://image.slidesharecdn.com/developerweek2015-docker-tutorial-150209173058-conversion-gate02/95/developerweek-2015-a-practical-introduction-to-docker-6-638.jpg?cb=1423503745" /></p>
 
