@@ -7,17 +7,21 @@
 This installation uses the Apache HTTPD image. For more information about this image, view its image on Docker Hub [here](https://hub.docker.com/_/httpd/).
 
 ### Create a Dockerfile
+On your local computer, create a file called `Dockerfile` with the following content:
 ```
 FROM httpd:2.4
 RUN echo "Hello World From Apache HTTPD!" > /usr/local/apache2/htdocs/index.html
 ```
 
 ### Build your image
+From your terminal, navigate to the folder with your `Dockerfile` and perform the following command:
 ```
 docker build -t httpd-server .
 ```
 
 ### Run your container
+From your terminal, create a new container that uses your image using the following command:
 ```
 docker run -d -p 8090:80 --name mysite httpd-server
 ```
+You should now be able to access your site on port 8090. To get the IP, use `docker-machine ip <docker-machine-name>` in your terminal.
