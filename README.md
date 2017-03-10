@@ -3,7 +3,7 @@ Examples and Instructions for IOP Docker Lab
 ![Docker](https://securityledger.com/wp-content/uploads/2015/05/docker-1024x347.png)
 
 ## Docker Basics
-Docker provides virtualization technology that has fast start-up times and small resource footprint. Docker containers achieve this efficiency by sharing the host's kernel. This is contrary to a virtual machine which requires its own kernel. Eliminating the kernel and all of its necessary resources means that the virtualized operating system can be much smaller and processes required for kernel-level services do not need to be spun up. The modular nature of Docker containers allows applications to easily be moved around without worrying about it working in any given environment.
+Docker provides virtualization technology that has fast start-up times and small resource footprint. Docker containers achieve this efficiency by sharing the host's kernel. This is contrary to a virtual machine which requires its own kernel. Eliminating the kernel and all of its necessary resources means that the virtualized operating system can be much smaller and processes required for kernel-level services do not need to be spun up.
 
 <p align="center"><img src="https://image.slidesharecdn.com/developerweek2015-docker-tutorial-150209173058-conversion-gate02/95/developerweek-2015-a-practical-introduction-to-docker-6-638.jpg?cb=1423503745" /></p>
 
@@ -66,7 +66,7 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 
 ## Common Docker Commands
 ### Managing Images
-+ To **get a list of images** use `docker images`
++ To **get a list of installed images** use `docker images`
 + To **build an image** use `docker build -t <image-name> .` within a directory with a Dockerfile
 + To **pull an image** from DockerHub use `docker pull <user-name>/<image-name>:<tag-name>`
 + To **push an image** to DockerHub use `docker push <user-name>/<image-name>:<tag-name>`
