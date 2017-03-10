@@ -58,7 +58,7 @@ To see a list of docker-machine VMs in your environment use `docker-machine ls`
 
 To use your Docker Toolbox environment in CMD or PowerShell perform the following:
 + Open a shell window and use `docker-machine env <docker-machine-name>`
-+ `@FOR /f "tokens=*" %i IN ('docker-machine env <docker-machine-name>') DO @%i`
++ Run the following command to set variables: `@FOR /f "tokens=*" %i IN ('docker-machine env <docker-machine-name>') DO @%i`
 
 Once your environment is setup, you can access docker commands such as `docker images`, `docker ps` etc.
 
