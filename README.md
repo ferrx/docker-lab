@@ -82,7 +82,7 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 + To **start a stopped container** use `docker start <container-name>`
 + To **remove a stopped container** use `docker rm <container-name>`
 + To **remove a running container** use `docker rm <container-name> -f`
-+ To **remove all stopped containers** use `powershell docker rm $(docker ps -af status=exited -q)`
++ To **remove all exited containers** use `powershell docker rm $(docker ps -af status=exited -q)`
 + To **remove all containers** use `powershell docker rm $(docker ps -a -q) -f`
 + To **view container properties** use `docker inspect <container-name>`
 
