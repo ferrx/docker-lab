@@ -25,3 +25,22 @@ From your terminal, create a new container that uses your image using the follow
 docker run -d -p 8090:80 --name mysite httpd-server
 ```
 You should now be able to access your site on port 8090. To get the IP, use `docker-machine ip <docker-machine-name>` in your terminal.
+
+### Upgrade your image with a tag
+From your terminal, remove your running container:
+```
+docker rm mysite -f
+```
+Edit your Dockerfile with new index.html contents, such as:
+```
+FROM httpd:2.4
+RUN echo "Hello World From Apache HTTPd! Version 2.0 has launched!!!" > /usr/local/apache2/htdocs/index.html
+```
+From your terminal, build a new image using a tag (note the `:v2`):
+```
+docker build -t httpd-server:v2 .
+```
+From your terminal, run a container using your new image (note the `:v2`):
+```
+docker run -d -p 8090:80 --name mysite httpd-server:v2
+```
