@@ -41,6 +41,7 @@ From your terminal, build a new image using a tag (note the `:v2`):
 docker build -t httpd-server:v2 .
 ```
 You should now be able to see `httpd-server` and `httpd-server:v2` when using `docker images`
+
 From your terminal, run a container using your new image (note the `:v2`):
 ```
 docker run -d -p 8090:80 --name mysite httpd-server:v2
