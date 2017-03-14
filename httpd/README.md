@@ -45,3 +45,4 @@ From your terminal, run a container using your new image (note the `:v2`):
 ```
 docker run -d -p 8090:80 --name mysite httpd-server:v2
 ```
+Browsing to your site will now display the new index.html
