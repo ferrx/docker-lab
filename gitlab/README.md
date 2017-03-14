@@ -21,4 +21,4 @@ For detailed documentation on all `run` commands, see docker's documentation [he
 + `--hostname`: This is the name for the host-facing IP address for the container
 + `--publish`: This is used to map a host port to a guest (container) port. Usage is `--publish <host-port>:<guest-port>`
 + `--restart`: This is the restart policy applied when the container exits. The options are `no`, `failure`, and `always`
-+ `--volume`: This is a volume mapping that the container can store data into. Usage is `--volume <host-file-path>:<guest-file-path>`
++ `--volume`: This is a volume mapping that the container can store data into. Usage is `--volume <host-file-path>:<guest-file-path>`. Normally, once a container is removed, all data will be lost. This is the ephermeral nature of a stateless container. However, when linking to a volume, you can remove and spin-up a container without losing the data, because the data will persist outside of the container.
