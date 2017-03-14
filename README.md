@@ -54,7 +54,8 @@ Once the "default" docker-machine has been created, you can use it at any point 
 ## Docker Toolbox Basics
 Docker Toolbox can be used on older flavors of Windows and uses VirtualBox to create Linux-based Virtual Machines (aka docker-machine) to run Docker Linux Containers. If you have Windows 10 Pro (or higher), you have access to "Docker for Windows" which runs natively without the need for a VM, and can run both Linux Containers and Windows Containers.
 
-To see a list of docker-machine VMs in your environment use `docker-machine ls`
++ To **see a list of docker-machine VMs in your environment** use `docker-machine ls`
++ To **start a docker-machine VM** use `docker-machine start <docker-machine-name>`. Other commands are `stop` and `restart`.
 
 To use your Docker Toolbox environment in CMD or PowerShell perform the following:
 + Open a shell window and use `docker-machine env <docker-machine-name>`
