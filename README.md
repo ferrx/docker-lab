@@ -90,3 +90,9 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 ### Interacting with Containers
 + To **execute a command on a running container** use `docker exec <container-name> <command>`
 + To **enter a running a container with bash** use `docker exec -it <container-name> bash`
+
+## Lab Exercises
++ Run your first container with [hello-world](https://github.com/ferrx/docker-lab/tree/master/hello-world)
++ Build your first image with [httpd](https://github.com/ferrx/docker-lab/tree/master/httpd)
++ Use Docker-Compose to deploy [Wordpress](https://github.com/ferrx/docker-lab/tree/master/wordpress)
++ Link volumes to a container with [Gitlab](https://github.com/ferrx/docker-lab/tree/master/gitlab)
