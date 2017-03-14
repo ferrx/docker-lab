@@ -7,7 +7,7 @@
 This installation uses the httpd image. For more information about this image, view its image on Docker Hub [here](https://hub.docker.com/_/httpd/).
 
 ### Create a Dockerfile
-On your local computer, create a file called `Dockerfile` with the following content:
+On your local computer, create a file called `Dockerfile` or save [this Dockerfile](https://github.com/ferrx/docker-lab/blob/master/httpd/Dockerfile) with the following content:
 ```
 FROM httpd:2.4
 RUN echo "Hello World From Apache HTTPd!" > /usr/local/apache2/htdocs/index.html
