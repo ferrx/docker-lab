@@ -95,4 +95,4 @@ To get the IP for your docker-machine, use `docker-machine ip <docker-machine-na
 + Run your first container with [hello-world](https://github.com/ferrx/docker-lab/tree/master/hello-world)
 + Build your first image with [httpd](https://github.com/ferrx/docker-lab/tree/master/httpd)
 + Use Docker-Compose to deploy [Wordpress](https://github.com/ferrx/docker-lab/tree/master/wordpress)
-+ Link volumes to a container with [Gitlab](https://github.com/ferrx/docker-lab/tree/master/gitlab)
++ Link volumes to a container for [Gitlab](https://github.com/ferrx/docker-lab/tree/master/gitlab)
